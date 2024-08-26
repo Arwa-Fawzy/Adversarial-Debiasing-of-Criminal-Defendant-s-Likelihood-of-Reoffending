@@ -24,6 +24,7 @@ Clone the repository and install the required packages.
 git clone https://github.com/Arwa-Fawzy/Adversarial-Debiasing-of-Criminal-Defendant-s-Likelihood-of-Reoffending.git
 cd Adversarial-Debiasing-of-Criminal-Defendant-s-Likelihood-of-Reoffending
 pip install -r requirements.txt
+```
 
 ## Dataset
 
