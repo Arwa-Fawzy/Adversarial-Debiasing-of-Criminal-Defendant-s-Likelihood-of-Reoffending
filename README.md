@@ -28,12 +28,12 @@ pip install -r requirements.txt
 
 ## Dataset
 
-The dataset used in this project is the COMPAS dataset, which contains demographic and criminal history data on defendants. For more details on the dataset, please refer to the [COMPAS dataset documentation](https://github.com/propublica/compas-analysis).
+The dataset used in this project is the COMPAS dataset, which contains demographic and criminal history data on defendants.
 
 - **Features**: Demographics, criminal history, and recidivism prediction scores.
 - **Target**: Whether the defendant reoffends within two years.
 
-You can download the dataset [here](https://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv).
+You can download the dataset [here](https://www.kaggle.com/datasets/danofer/compass?resource=download).
 
 
 1. **Person Information**:
