@@ -35,6 +35,48 @@ The dataset used in this project is the COMPAS dataset, which contains demograph
 
 You can download the dataset [here](https://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv).
 
+
+1. **Person Information**:
+   - **Person_ID**: A unique identifier assigned to each individual.
+   - **AssessmentID**: A unique identifier for the specific assessment conducted on the individual.
+   - **Case_ID**: The identifier for the legal case associated with the individual.
+
+2. **Demographics**:
+   - **Agency_Text**: The name of the agency conducting the assessment (e.g., PRETRIAL).
+   - **LastName**: The individual's last name.
+   - **FirstName**: The individual's first name.
+   - **MiddleName**: The individual's middle name (or NULL if not available).
+   - **Sex_Code_Text**: The individual's gender (e.g., Male).
+   - **Ethnic_Code_Text**: The individual's ethnicity or race (e.g., Caucasian, African-American).
+   - **DateOfBirth**: The individual's date of birth.
+
+3. **Assessment Details**:
+   - **ScaleSet_ID**: A numeric identifier for the set of scales used in the assessment.
+   - **ScaleSet**: Describes the set of scales (e.g., "Risk and Prescreen") used to evaluate the individual.
+   - **AssessmentReason**: The reason for the assessment (e.g., Intake).
+   - **Language**: The language in which the assessment was conducted (e.g., English).
+   - **LegalStatus**: The individual's legal status at the time of assessment (e.g., Pretrial).
+   - **CustodyStatus**: The custody status of the individual (e.g., Jail Inmate).
+   - **MaritalStatus**: The individual’s marital status (e.g., Single, Married).
+
+4. **Dates and Times**:
+   - **Screening_Date**: The date the screening took place.
+
+5. **Risk and Supervision Levels**:
+   - **RecSupervisionLevel**: A numeric identifier for the recommended supervision level (e.g., 1 for Low, 4 for High).
+   - **RecSupervisionLevelText**: A textual description of the supervision level (e.g., Low, High).
+
+6. **Assessment Scores**:
+   - **Scale_ID**: The identifier for the specific scale used in the assessment (e.g., 7 for Risk of Violence).
+   - **DisplayText**: The description of the scale being used (e.g., Risk of Violence, Risk of Recidivism).
+   - **RawScore**: The raw score produced by the assessment for that specific scale.
+   - **DecileScore**: A decile score indicating the severity of risk, ranging from 1 to 10 (higher numbers indicate higher risk).
+   - **ScoreText**: A textual description of the risk level (e.g., Low, High).
+
+7. **Assessment Metadata**:
+   - **AssessmentType**: Describes the type of assessment (e.g., New for newly conducted assessments).
+   - **IsCompleted**: Indicates whether the assessment was completed (1 = Yes, 0 = No).
+   - **IsDeleted**: Indicates whether the assessment has been deleted (1 = Yes, 0 = No).
 ## Model Description
 
 This project implements three models:
